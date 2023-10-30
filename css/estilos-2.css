@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  color: #43484d;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+h3 {
+  color: #43484d;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.game-category h2 {
+  color: #358ed7;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.game-item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 40px;
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.game-name {
+  color: #43484d;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.game-flex {
+  display: flex;
+  justify-content: end;
+}
+
+.game-flex-botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.game-flex-column {
+  flex-direction: column;
+  width: 50%;
+  margin-right: 0.8rem;
+}
+
+.game-image {
+  width: 50%;
+  position: relative;
+}
+
+.game-image img {
+  width: 100%;
+  height: auto;
+}
+
+.game-description {
+  width: 50%;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.game-description-comprar {
+  margin-bottom: 20px;
+}
+
+.game-description p,
+.game-description-comprar p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #86939e;
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .game-image {
+    width: 100%;
+  }
+
+  .game-description {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .game-flex-column {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.game-buy-button-container {
+  align-self: flex-end;
+}
+.game-buy-button-container a {
+  background-color: #7dc855;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  white-space: nowrap;
+}
+.game-buy-button-container a:hover {
+  background-color: #64af3d;
+}
+
+.game-home-button-container {
+  align-self: flex-start;
+}
+.game-home-button-container a {
+  background-color: #3474cd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  white-space: nowrap;
+}
+.game-home-button-container a:hover {
+  background-color: #2059aa;
+}
+
+footer {
+  color: #358ed7;
+  font-size: 12px;
+  display: inline-block;
+}
+
+/*Carrusel de imágenes*/
+.game-images {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: auto;
+}
+
+.game-images > img {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}
+
+/*Estilos de formulario*/
+form {
+  margin-top: 1rem;
+}
+
+input {
+  background: #f9f9f9;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  border: 1px solid #c0c4c8;
+  border-bottom: 2px solid #c0c4c8;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+.formulario-grupo {
+  display: block;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.formulario-option-group {
+  margin-top: 0.5rem;
+}
+form label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #86939e;
+  margin-top: 0;
+}
+
+form input {
+  background-repeat: no-repeat;
+  background-position: left 0.75rem bottom 50%;
+  padding-left: 2.25rem;
+}
+form input[id="nombreyapellido"] {
+  background-image: url("../img/icons/user.png");
+}
+form input[id="domicilio"] {
+  background-image: url("../img/icons/address.png");
+}
+form input[type="tel"] {
+  background-image: url("../img/icons/phone.png");
+}
+form input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+  padding: inherit;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  cursor: pointer;
+  background-position: 50%;
+}
+form input[type="radio"] + label {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-left: 0.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.formulario-titulo {
+  color: #43484d;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

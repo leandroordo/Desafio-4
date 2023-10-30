@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Kart™ 8 Deluxe</title>
+    <link rel="stylesheet" href="./css/estilos-1.css" />
+    <!-- <link rel="stylesheet" href="./css/estilos-2.css" /> -->
+  </head>
+  <body>
+    <div class="main">
+      <h1>Mario Kart™ 8 Deluxe</h1>
+      <div class="game-category">
+        <h2>Comprar</h2>
+      </div>
+      <div class="game-item">
+        <div class="game-flex">
+          <div class="game-flex-column">
+            <div class="game-images">
+              <img
+                src="./img/mario1.jpg"
+                alt="Imagen del juego Mario Kart™ 8 Deluxe"
+              />
+              <img
+                src="./img/mario2.jpg"
+                alt="Otra imagen del juego Mario Kart™ 8 Deluxe"
+              />
+              <img
+                src="./img/mario3.jpg"
+                alt="Otra imagen del juego Mario Kart™ 8 Deluxe"
+              />
+            </div>
+            <div class="game-description-comprar">
+              <p>
+                ¡Corre con Mario y sus amigos donde quieras y cuando quieras!
+              </p>
+              <p>
+                ¡Acelera a través de las pistas del Reino Champiñón bajo el
+                agua, en el cielo, de cabeza y sin gravedad, y llega a la meta
+                para obtener la victoria! Prepara motores en el modo
+                multijugador local*, en los torneos en línea** del juego, en el
+                modo batalla que ha sido mejorado ¡y más!
+              </p>
+              <p>
+                ¡Descubre lo nuevo de Mario Kart™ 8 Deluxe y juega con nuevos
+                personajes como Inkling chica e Inkling chico! Podrás elegir sus
+                karts inspirados en el juego Splatoon en Parque Viaducto para el
+                modo batalla. También hay objetos que están de regreso, como
+                Boo, el fantasma que roba objetos, y la pluma, que se usa en el
+                modo batalla, ¡y ahora podrás llevar dos objetos a la vez!
+                Demuéstrale al mundo que eres el mejor en los torneos en línea o
+                compite con tus amigos a través de internet. Con tantas opciones
+                de control y el modo portátil, ¡siempre habrá una nueva manera
+                de jugar en la consola Nintendo Switch™!
+              </p>
+            </div>
+          </div>
+          <div class="game-flex-column">
+            <div class="formulario-titulo">
+              Completa para realizar tu compra
+            </div>
+            <form action="comprar.php" method="POST">
+              <div class="formulario-grupo">
+                <label for="nombre">Nombre y apellido</label>
+                <input
+                  id="nombreyapellido"
+                  type="text"
+                  placeholder="Nombre y apellido"
+                  value=""
+                />
+              </div>
+              <div class="formulario-grupo">
+                <label for="domicilio">Domicilio</label>
+                <input
+                  id="domicilio"
+                  type="text"
+                  placeholder="Domicilio"
+                  value=""
+                />
+              </div>
+              <div class="formulario-grupo">
+                <label for="telefono">Teléfono</label>
+                <input
+                  id="telefono"
+                  type="tel"
+                  placeholder="Número de teléfono"
+                  value=""
+                />
+              </div>
+              <div class="formulario-grupo">
+                <label for="formadepago">Forma de pago</label>
+                <fieldset id="formadepago">
+                  <div class="formulario-option-group">
+                    <input type="radio" id="Efectivo" name="Forma de pago" />
+                    <label for="Efectivo">Efectivo</label>
+                  </div>
+                  <div class="formulario-option-group">
+                    <input
+                      type="radio"
+                      id="Tranferencia"
+                      name="Forma de pago"
+                    />
+                    <label for="Tranferencia">Tranferencia</label>
+                  </div>
+                  <div class="formulario-option-group">
+                    <input type="radio" id="MercadoPago" name="Forma de pago" />
+                    <label for="MercadoPago">Mercado Pago</label>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="game-flex-botones">
+          <div class="game-home-button-container">
+            <a href="./index.html">Volver</a>
+          </div>
+          <div class="game-buy-button-container">
+            <a href="#">Confirmar compra</a>
+          </div>
+        </div>
+      </div>
+      <footer>Desarrollado por misitio.com</footer>
+    </div>
+  </body>
+</html>

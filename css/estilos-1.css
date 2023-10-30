@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e11364;
+}
+
+h1 {
+  background-color: #bc105c;
+  border-left: solid 6px white;
+  border-right: solid 6px white;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 56px;
+  padding: 20px;
+  text-align: center;
+}
+
+.game-item > h3,
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 18px;
+}
+
+h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+footer {
+  background-color: #e96092;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 24px;
+  text-align: center;
+}
+
+.main {
+  margin: 40px 7vw 40px 7vw;
+}
+
+.game-category {
+  background-color: #bc105c;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.game-item {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 13px;
+}
+
+.game-name {
+  border-bottom: dotted 2px #bc105c;
+  color: #bc105c;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.game-flex > .game-flex-column > .game-images > img,
+.game-image > img {
+  width: 100%;
+  height: auto;
+}
+
+.game-buy-button-container,
+.game-hombe-button-container {
+  text-align: center;
+}
+
+.game-buy-button-container > a {
+  background-color: #2b8f20;
+  border-radius: 7px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 12px 13px;
+  text-decoration: none;
+}
+
+.game-home-button-container > a {
+  background-color: #2b8f20;
+  border-radius: 7px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.game-buy-button-container > a:hover,
+.game-home-button-container > a:hover {
+  background-color: #bc105c;
+}
+/*Para alinear a la izquierda el botón Volver y a la derecha el botón Comprar*/
+.game-flex-botones div:first-child {
+  float: left;
+}
+.game-flex-botones div:last-child {
+  float: right;
+}
+/*Remember to clear the float if the elements following the container are not displayed as expected.*/
+.game-flex-botones::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Estilos de formulario*/
+form {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+}
+input {
+  font-size: 0.9rem;
+  border: 1px solid black;
+  width: 100%;
+  padding: 0.3rem;
+}
+.formulario-grupo {
+  display: block;
+  margin-top: 1rem;
+}
+form input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+  padding: inherit;
+  margin: 5px 5px;
+  vertical-align: top;
+  cursor: pointer;
+}
+form input[type="radio"] + label {
+  display: inline-block;
+  margin: 5px 3px;
+  padding-left: 10px;
+}
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.formulario-titulo {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 24px;
+}

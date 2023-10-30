@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortal Kombat 11</title>
+    <link rel="stylesheet" href="./css/estilos-1.css" />
+    <!-- <link rel="stylesheet" href="./css/estilos-2.css" /> -->
+  </head>
+  <body>
+    <div class="main">
+      <h1>Mortal Kombat 11</h1>
+      <div class="game-category">
+        <h2>Comprar</h2>
+      </div>
+      <div class="game-item">
+        <div class="game-flex">
+          <div class="game-flex-column">
+            <div class="game-images">
+              <img
+                src="./img/MortalKombat1.jpg"
+                alt="Imagen del juego Mortal Kombat 11"
+              />
+              <img
+                src="./img/MortalKombat2.jpg"
+                alt="Otra imagen del juego Mortal Kombat 11"
+              />
+              <img
+                src="./img/MortalKombat3.jpg"
+                alt="Otra imagen del juego Mortal Kombat 11"
+              />
+            </div>
+            <div class="game-description-comprar">
+              <p>
+                Toma control de los protectores de Earthrealm en las DOS
+                aclamadas Historias de Campaña mientras compiten para detener a
+                Kronika de regresar el tiempo y restablecer la historia. Las
+                amistades serán puestas a prueba, y nuevas alianzas forjadas, en
+                la batalla para salvar toda la existencia.
+              </p>
+              <p>
+                Mortal Kombat 11 Ultimate ofrece la experiencia definitiva de
+                Mortal Kombat 11, ya que incluye el Kombat Pack 2 con nuevos
+                kombatientes jugables (Mileena, Rain y Rambo), el juego
+                principal de Mortal Kombat 11, el Kombat Pack 1 y la expansión
+                Mortal Kombat 11: Aftermath.
+              </p>
+              <p>
+                Incluye todos los 13 personajes agregados incluyendo Shao Kahn,
+                Shang Tsung, Nightwolf, Terminator, Sindel, El Guasón, Spawn,
+                Fujin, Sheeva, RoboCop y los recién agregados Mileena, Rain y
+                Rambo.
+              </p>
+              <p>
+                Mortal Kombat 11 Ultimate estará disponible en las consolas de
+                PS5™, PS4™*, PS4™ Pro*, Xbox Series X|S y Xbox One, y en
+                Nintendo Switch*, PC* y Stadia*.
+              </p>
+              <p>
+                Mortal Kombat 11 Ultimate estará disponible en formato digital
+                para PS5™, PS4™ y PS4™ Pro a partir del 17 de noviembre. La
+                versión física para PS4™ y PS4™ Pro estará disponible en enero
+                en América (excepto Brasil). Además, la versión para Nintendo
+                Switch solo estará disponible en formato digital en América. Las
+                versiones para PC y Stadia solo estarán disponibles en formato
+                digital en todo el mundo el 17 de noviembre.
+              </p>
+            </div>
+          </div>
+          <div class="game-flex-column">
+            <div class="formulario-titulo">
+              Completa para realizar tu compra
+            </div>
+            <form action="comprar.php" method="POST">
+              <div class="formulario-grupo">
+                <label for="nombre">Nombre y apellido</label>
+                <input
+                  id="nombreyapellido"
+                  type="text"
+                  placeholder="Nombre y apellido"
+                  value=""
+                />
+              </div>
+              <div class="formulario-grupo">
+                <label for="domicilio">Domicilio</label>
+                <input
+                  id="domicilio"
+                  type="text"
+                  placeholder="Domicilio"
+                  value=""
+                />
+              </div>
+              <div class="formulario-grupo">
+                <label for="telefono">Teléfono</label>
+                <input
+                  id="telefono"
+                  type="tel"
+                  placeholder="Número de teléfono"
+                  value=""
+                />
+              </div>
+              <div class="formulario-grupo">
+                <label for="formadepago">Forma de pago</label>
+                <fieldset id="formadepago">
+                  <div class="formulario-option-group">
+                    <input type="radio" id="Efectivo" name="Forma de pago" />
+                    <label for="Efectivo">Efectivo</label>
+                  </div>
+                  <div class="formulario-option-group">
+                    <input
+                      type="radio"
+                      id="Tranferencia"
+                      name="Forma de pago"
+                    />
+                    <label for="Tranferencia">Tranferencia</label>
+                  </div>
+                  <div class="formulario-option-group">
+                    <input type="radio" id="MercadoPago" name="Forma de pago" />
+                    <label for="MercadoPago">Mercado Pago</label>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="game-flex-botones">
+          <div class="game-home-button-container">
+            <a href="./index.html">Volver</a>
+          </div>
+          <div class="game-buy-button-container">
+            <a href="#">Confirmar compra</a>
+          </div>
+        </div>
+      </div>
+      <footer>Desarrollado por misitio.com</footer>
+    </div>
+  </body>
+</html>
